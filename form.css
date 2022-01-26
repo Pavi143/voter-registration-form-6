@@ -1,0 +1,114 @@
+*{
+    margin: 5px;
+    font-size: large;
+}
+nav{
+    background-color: black;
+    margin: 15px 10px 15px 10px;
+    height: 70px;
+    width: 100%;
+}
+ nav ul li h1{
+    
+    text-align-last: center;
+    color: white;
+    font-size: 28px;
+}
+h1{
+    color: brown;
+    font-size: larger;
+}
+.img2{
+     float: right;
+     margin-right: 30px;
+     padding-right: 40px;
+}
+nav ul{
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 10px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 10px;
+
+}
+.container{
+    
+    border-color: black;
+    border-style: double;
+    background-color:beige;
+    height: 90%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+ div.blue{
+     background-color: rgb(187, 206, 240);
+     margin-top: 0px;
+    width: 98%;
+    height: 80px;
+    padding:3px 10px 3px 0px;
+}
+div.red{
+    background-color: rgb(235, 197, 197);
+   width: 98%;
+   height: 70px;
+   padding:10px 10px 3px 10px;
+}
+div.red2{
+    background-color: rgb(235, 197, 197);
+   width: 98%;
+   height: 50px;
+   padding:10px 10px 3px 10px;
+   text-align: left;
+}
+div.details{
+    margin-left: 30%;
+}
+
+div.declare{
+    margin-left: 30%;
+}
+
+div.declaration{
+    margin-left: 30%;
+}
+h2{
+    font-size: larger;
+}
+
+div.sub{
+    margin-left: 30%;
+    font-size: x-large;
+}
+
+div.last{
+    margin-left: 30%;
+}
+
+label{
+    margin-left: 30%;
+}
+.dis{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.doctype{
+    margin-left: 30%;
+    display: flex;
+
+}
+.address{
+    margin-left: 30%;
+    display: flex;
+}
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: black;
+}

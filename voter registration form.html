@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            voter registration form
+        </title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+               <li><img src="flag.jpg" width=100px height=40px></li>
+               <li><h1>राष्ट्रीय मतदान सेवा डेमो पोर्टल</h1></li>
+                <li><h1>NATIONAL VOTER'S SERVICE DEMO PORTAL</h1></li>
+                <li><img src="vote.jpg" width=100px height="40px"></li>
+                </ul>
+            </nav>
+            <h1>NOTE FIELDS MARKED WITH THE ASTERISKS(*) ARE MANDATORY</h1>
+        </header>
+        <main>
+            
+            <div class="container">
+                <div class="blue">
+                    <h2>Type 6</h2>
+                    <h2>[see rule 13(1) and 26]</h2>
+
+                </div>
+            
+                <div class="red">
+                    <h2>Application for inclusion of name in the electoral roll the first time due to the transfer of the voter or any other constituency from any one constituency</h2>
+                </div>
+                <form action="next" method="post">
+                    <br>
+                    <h2>In service</h2>
+                    <br>
+                    <h2>Elecrtorial Registration Officer,</h2>
+                    <br>
+                      <label>State*</label>
+                    <select  name="state" id="state" required>
+                        <option value="">Select state</option>
+                        <option value="AN">Andaman and Nicobar Islands</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="CT">Chhattisgarh</option>
+                        <option value="DN">Dadra and Nagar Haveli</option>
+                        <option value="DD">Daman and Diu</option>
+                        <option value="DL">Delhi</option>
+                        <option value="GA">Goa</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="LA">Ladakh</option>
+                        <option value="LD">Lakshadweep</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OR">Odisha</option>
+                        <option value="PY">Puducherry</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="TG">Telangana</option>
+                        <option value="TR">Tripura</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="UT">Uttarakhand</option>
+                        <option value="WB">West Bengal</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>District*</label>
+                    <input type="search" name="district" required>
+                    <br>
+                    <br>
+                    <label>Legislative Assembly/Parlimentry</label>
+                    <input type="text" name="lap">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>I request that my name be included in electoral rolls for all the aforesaid areas.</h2>
+                    <br>
+                    <br>
+                    <label>First time voter</label>
+                    <input type="radio" name="first time">
+                    <br>
+                    <br>
+                    <label>Due to transfer from other meeting areas</label>
+                    <input type="radio" name="first time">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Below are specifications in my support of my claim to be included in electoral rolls.</h2>
+                    <br>
+                    <div class="red2">
+                        
+                            <h2>Mandatory specifications</h2>
+                        
+                    </div>
+                    <br>
+                    <div class="details">
+                        <span >(A) Name*</span> 
+                        <input type="text" name="Name" placeholder="      (in English)" required>
+                        <input type="text" name="Name1" placeholder="     (in Regional" required>
+                        <br>
+                        <br>
+                        <span >(B) Surname*(if any)</span> 
+                        <input type="text" name="surname" placeholder="      (in English)" required>
+                        <input type="text" name="surname1" placeholder="     (in Regional" required>
+                        <br>
+                        <br>
+                        <span >(C) Name of the applicant's relative*</span> 
+                        <input type="text" name="AName" placeholder="      (in English)" required>
+                        <input type="text" name="AName1" placeholder="     (in Regional" required>
+                        <br>
+                        <br>
+                        <span >Nick name of the applicant's relative*</span> 
+                        <input type="text" name="NName" placeholder="      (in English)" required>
+                        <input type="text" name="NName1" placeholder="     (in Regional" required>
+                        <br>
+                        <br>
+                        <span>(D)Type of the relationship*</span>
+                        <select name="type" required>
+                            <option value="">Select</option>
+                            <option value="father">Father</option>
+                            <option value="mother">Mother</option>
+                            <option value="guardian">Guardian</option>
+                            <option value="others">Others</option>
+                        </select>
+                        <br>
+                        <br>
+                        <span>(E)Age*[on january 1 of the current calender]</span>
+                        <input type="number" name="age"  required>
+                        <br>
+                        <br>
+                        <h2>Or</h2>
+                        <br>
+                        <br>
+                        <span>(F)Date of birth*(in the form of day/month/year)</span>
+                        <input type="date" name="date" required>
+                        <h3>(if known)</h3>
+                        <br>
+                        <br>
+                        <span>(G)Applicant's gender*</span>
+                        <select name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Transgender">Transgender</option>
+                            <option value="others">others</option>
+                        </select>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="red2">
+                        <h2>(H)Current address,whose applicant is nominally resident</h2>
+                    </div>
+                    <br>
+                    <div class="house details">
+                        <span >House No.* </span> 
+                        <input type="text" name="house no" placeholder="      (in English)" required>
+                        <input type="text" name="house no1" placeholder="     (in Regional" required>
+                        <br>
+                        <br>
+                        <span >Street/area/location*</span> 
+                        <input type="text" name="area" placeholder="      (in English)" required>
+                        <input type="text" name="area1" placeholder="     (in Regional" required>
+                        <br>
+                        <br>
+                        <span >City/village*</span> 
+                        <input type="text" name="city" placeholder="      (in English)" required>
+                        <input type="text" name="city1" placeholder="     (in Regional" required>
+                        <br>
+                        <br>
+                        <span >Post office</span> 
+                        <input type="text" name="post" placeholder="      (in English)" required>
+                        <input type="text" name="post1" placeholder="     (in Regional" required>
+                        <br>
+                        <br>
+                        <span >Pin code*</span> 
+                        <input type="number" name="pcode"  required>
+                        <br>
+                        <br>
+                        <span>State*</span>
+                        <select  name="state1" id="state" required>
+                        <option value="">Select state</option>
+                        <option value="AN">Andaman and Nicobar Islands</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="CT">Chhattisgarh</option>
+                        <option value="DN">Dadra and Nagar Haveli</option>
+                        <option value="DD">Daman and Diu</option>
+                        <option value="DL">Delhi</option>
+                        <option value="GA">Goa</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="LA">Ladakh</option>
+                        <option value="LD">Lakshadweep</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OR">Odisha</option>
+                        <option value="PY">Puducherry</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="TG">Telangana</option>
+                        <option value="TR">Tripura</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="UT">Uttarakhand</option>
+                        <option value="WB">West Bengal</option>
+                    </select>
+                    <br>
+                    <br>
+                    <span>District*</span>
+                    <input type="text" name="district1" required>
+                    <br>
+                    <br>
+                    
+                    <span>Family/Neibour Epic No. </span>
+                    <input type="number" name="fam/nei">
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="red2">
+                        <h2>Optional specialities</h2>
+                    </div>
+                    <br>
+                    <h3>(T) Disability (if any)</h3>
+                    <br>
+                    <br>
+                    <ul class="dis">
+                    <li><span>Visual impairment</span> 
+                    <input type="checkbox" name="visual impairment"></li>
+                    <li><span>Speech and hearing impairment</span>
+                         <input type="checkbox" name="speech and hearing"></li>
+                    <li><span>Motion disabling</span>
+                        <input type="checkbox" name="motion disabling"></li>
+                    <li><span>Other</span>
+                        <input type="text" name="visual impairment"></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <label>(Th) Emaid ID(optional)</label>
+                    <input type="email" name="email id">
+                    <br>
+                    <br>
+                    <label>(D) Mobile Number (optional) +91</label>
+                    <input type="number" name="Mobile number">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="red2">
+                         <h2>Upload supporting documents(Supported formats .jpg, .png, .bmp, .jpeg) (max 2Mb)</h2>
+                    </div>
+                    <br>
+
+                    <label>Your photo</label>
+                    <input type="file" name="photo" accept=".jpg, .png, .bmp, .jpeg" >
+                    <br>
+                    <br>
+                    <div class="doctype">
+                        <span>Age proof</span>
+                        <input type="file" name="age" accept=".jpg, .png, .bmp, .jpeg" >
+                        <span>Document type</span>
+                        <select  name="doc" id="doc">
+                           <option value="">Document type</option>
+                           <option value="pdf">PDF</option>
+                           <option value="jpg">JPG</option>
+                        </select>
+                    </div> 
+                   
+                    <br>
+                    <br>
+                    <div class="address">
+                        <span>Address proof</span>
+                        <input type="file" name="Address" accept=".jpg, .png, .bmp, .jpeg">
+                        <span>Document type</span>
+                        <select name="dt" id="dt">
+                           <option value="">Document type</option>
+                           <option value="pdf">PDF</option>
+                           <option value="jpg">JPG</option>
+                        </select>
+                    </div >
+                    <div class="red2">
+                        <h2>Declaration</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <h3>
+I declare that according to my best knowledge and belief I am a citizen of my birth;
+                    </h3>
+                    <br>
+                    <div class="declare">
+                        <span>City/Village:</span>
+                        <input type="text" name="cv">
+                        <span>State*</span>
+                        <select  name="state2" id="state" required>
+                        <option value="">Select state</option>
+                        <option value="AN">Andaman and Nicobar Islands</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="CT">Chhattisgarh</option>
+                        <option value="DN">Dadra and Nagar Haveli</option>
+                        <option value="DD">Daman and Diu</option>
+                        <option value="DL">Delhi</option>
+                        <option value="GA">Goa</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="LA">Ladakh</option>
+                        <option value="LD">Lakshadweep</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OR">Odisha</option>
+                        <option value="PY">Puducherry</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="TG">Telangana</option>
+                        <option value="TR">Tripura</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="UT">Uttarakhand</option>
+                        <option value="WB">West Bengal</option>
+                    </select>
+                    <br>
+                    <br>
+                    <span>District*</span>
+                    <input type="text" name="district2" required>
+                    <br>
+                    <br>
+                    <span>Date*</span>
+                    <input type="date" name="date2" placeholder="dd/mm/yyyy" required>
+                    <br>
+                    <br>
+                    </div>
+                    <h3>(ii) I am a nominally resident in the address given in the above (date,month,year);</h3>
+                    <br>
+                    <h3>I have not to include my name in the electoral roll for any other constituency;</h3>
+                    <br>
+                    <br>
+                    <div class="declaration">
+                        <span>(iv)My name has not been already included in the electoral rolls for this or any other assembly /parliamentry constituency</span>
+                        <input type="radio" name="o1">
+                        <br>
+                        <br>
+                        <h2>Or</h2>
+                        <br>
+                        
+                        <span>(iv)My name would have been  included in the electoral rolls of the state constituency,in which I was already residing in the address mentioned below,and if so, then I request that it be removed from that electoral roll.Go.</span>
+                        <input type="radio" name="o1">
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="last">
+                        <span>Location</span>
+                        <input type="text" name="location" required>
+                        <span>date</span>
+                        <input type="date" name="date4" placeholder="dd/mm/yyyy">
+                        <br>
+                        <br>
+                    </div>
+                    <h3>I am afraid that the statement or declaration, which is false, to whom I know it or believe that it is false or I do not believe in being true,the people's Representation Act,1950(43 of 1950) is punishable under section 31.
+                    </h3>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="sub">
+                        <span>Reset</span>
+                        <input type="reset" name="reset">
+                        <br>
+                        <br>
+                        <span>Submit</span>
+                        <input type="submit" name="submit">
+                    </div>
+                    <br>
+                    <br>
+                </form>
+                </div>
+                <footer>
+                    <h1>Copyright © 2018 Suven Consultants and Technology Pvt Ltd.</h1>
+                </footer>
+        </main>
+        
+       
+    </body>
+</html>
